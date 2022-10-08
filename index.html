@@ -1,21 +1,25 @@
 <html>
   <head>
     <style>
-     h1 {text-align: center;}
-    .btnContainer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 200px;
-      border: 3px solid green;
-    }
-   </style>
-   
+      h1 {text-align: center;}
+      .btnContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        border: 3px solid green;
+      }
+    </style>
+    <script>
+      function setLabel() {
+        document.getElementById('btnResponse').textContent = 'Clicked';
+      }
+    </script>
   </head>
   <body>
    <h1>GitHub Node Test</h1><br><br>
     <div class='btnContainer'>
-      <button type="button" onclick="alert('This button does nothing.')">Click me for no reason!</button>
+      <button type='button' onclick='setLabel()'>Set Label</button>
     </div>
     <label id='btnResponse'></label>
   </body>
